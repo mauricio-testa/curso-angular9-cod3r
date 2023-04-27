@@ -34,3 +34,11 @@ No `angular.json`, colocar false nessas duas configurações pra gerar arquivos 
 
 ## Material design
 `ng add @angular/material`
+
+## Criar component
+
+`ng generate component components/template/header` (forma curta `ng g c ...`)
+CREATE src/app/components/template/header/header.component.html (21 bytes)
+CREATE src/app/components/template/header/header.component.ts (202 bytes)
+CREATE src/app/components/template/header/header.component.css (0 bytes)
+UPDATE src/app/app.module.ts (698 bytes)
