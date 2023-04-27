@@ -1,0 +1,19 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "Caneta",
+			"price": 5.89
+		},
+		{
+			"id": 2,
+			"name": "Macbook PRO M1",
+			"price": 12000
+		},
+		{
+			"id": 3,
+			"name": "Smartphone Xiaomi NOTE 11",
+			"price": 2000
+		}
+	]
+}
