@@ -1,0 +1,10 @@
+.container {
+	height: calc(100% - 64px);
+}
+.sidenav {
+	background-color: #3f51b5;
+	width: 230px;
+}
+.sidenav  *{
+	color: #fff;
+}
