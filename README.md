@@ -49,8 +49,10 @@ UPDATE src/app/app.module.ts (698 bytes)
 
 O css do componente é sempre scoped! para css global, colocar em src\styles.css
 
-## Diretivas
+## Elementos do Angular
+
 [watch](https://www.youtube.com/watch?v=NgHu3ekeN_I&list=PLdPPE0hUkt0rPyAkdhHIIquKbwrGUkvw3&index=5)
+
 
 | Name | Angular | Vue |
 | ---- | ----- | ----- |
@@ -151,3 +153,25 @@ Processamento em cima de variáveis. Como se fosse vue filters. Podem ser encade
 
 `{{ valor }}` => 29.99 <br>
 `{{ valor | moeda }}` => R$ 29,99
+
+## Observables
+
+Angular usa o `ReactiveX` (`rxjs`)
+Padrão orientado a evento
+Pode ter vários observers querendo observar um subject. Mas pra eles observarem, eles tem que se registrar primeiro
+
+1. Observers se inscrevem no subject
+2. Suject emite o evento
+3. Subject tem a lista dos observers interessados nesse evento, então notifica os observers (callback)
+
+```ts
+function create(produto: Produto): Observable<Produto> {
+	return this.http.post<Produto>(this.url, produto)
+}
+// method call
+this.create(this.produto).subscribe(() => {
+	alert('criado com sucesso!')
+})
+```
+
+É uma evloução de padrão de projeto. Callbacks > Promisses > Observables
