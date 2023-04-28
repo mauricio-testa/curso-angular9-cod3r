@@ -186,12 +186,12 @@ Compartilhar informações entre componentes
 
 
 ```ts
-// Significa que a classe pode ser injetada em outras classes
 @Injectable({
 	providedIn: 'root' // Singleton
 })
 ```
 
+* `@Injectable` significa que a classe pode ser injetada em outras classes
 * `providedIn: 'root'` significa que a minha classe vai ficar disponível para a aplicação inteira em uma mesma instância
 * `root` é um alias para AppModule
 * Se eu quiser posso disponibilizar essa classe apenas a um modulo, importando o módulo
