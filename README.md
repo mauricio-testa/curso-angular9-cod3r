@@ -175,3 +175,33 @@ this.create(this.produto).subscribe(() => {
 ```
 
 É uma evloução de padrão de projeto. Callbacks > Promisses > Observables
+
+## Services
+
+Classes para organizar e reutilizar métodos e dados entre componentes
+
+Compartilhar informações entre componentes
+
+`ng g s services/product`
+
+
+```ts
+// Significa que a classe pode ser injetada em outras classes
+@Injectable({
+	providedIn: 'root' // Singleton
+})
+```
+
+* `providedIn: 'root'` significa que a minha classe vai ficar disponível para a aplicação inteira em uma mesma instância
+* `root` é um alias para AppModule
+* Se eu quiser posso disponibilizar essa classe apenas a um modulo, importando o módulo
+
+```ts
+import AuthModule from 'auth-module'
+@Injectable({
+	providedIn: AuthModule
+})
+```
+## Injeção de dependência
+
+"Ao invés de construir o motor na mesma fábrica que o carro, compra ele pronto e joga pra linha de montagem"
