@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -16,6 +17,7 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 import { ProductComponent } from './views/product/product.component';
 import { RedDirective } from './directives/red.directive';
+import { CreateComponent } from './components/product/create/create.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { RedDirective } from './directives/red.directive';
     NavComponent,
     HomeComponent,
     ProductComponent,
-    RedDirective
+    RedDirective,
+    CreateComponent
   ],
   imports: [ // como se fosse o components {} do vue
     BrowserModule,
@@ -34,7 +37,8 @@ import { RedDirective } from './directives/red.directive';
 	MatToolbarModule,
 	MatSidenavModule,
 	MatListModule,
-	MatCardModule
+	MatCardModule,
+	MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent] // #2 O app.module.ts diz que o componente inicial é o AppComponent. Como se fosse o App.vue
