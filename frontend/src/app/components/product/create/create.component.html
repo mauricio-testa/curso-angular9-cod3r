@@ -6,10 +6,10 @@
 
 		<form action="">
 			<mat-form-field>
-				<input matInput placeholder="Nome" type="text">
+				<input matInput placeholder="Nome" type="text" [(ngModel)]="product.name" name="name">
 			</mat-form-field>
 			<mat-form-field>
-				<input matInput placeholder="Preço (R$)" type="text">
+				<input matInput placeholder="Preço (R$)" type="number" [(ngModel)]="product.price" name="price">
 			</mat-form-field>
 		</form>
 
