@@ -205,3 +205,18 @@ import AuthModule from 'auth-module'
 ## Injeção de dependência
 
 "Ao invés de construir o motor na mesma fábrica que o carro, compra ele pronto e joga pra linha de montagem"
+
+https://www.youtube.com/watch?v=wDTPz032MRo&list=PLdPPE0hUkt0rPyAkdhHIIquKbwrGUkvw3&index=14
+
+app
+	components
+		product
+			product.model.ts
+			product.service.ts
+			create
+				create.component.(html|css|ts)
+		template
+			header
+				header.component.(html|css|ts)
+			footer
+				footer.component.(html|css|ts)
