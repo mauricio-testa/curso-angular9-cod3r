@@ -31,8 +31,8 @@ export class ProductService {
 		return this.http.get<Product>(`${this.baseUrl}/${id}`)
 	}
 
-	update(id: number, product: Product): Observable<Product> {
-		return this.http.put<Product>(`${this.baseUrl}/${id}`, product)
+	update(product: Product): Observable<Product> {
+		return this.http.put<Product>(`${this.baseUrl}/${product.id}`, product)
 	}
 
 	showMessage(msg: string): void {
