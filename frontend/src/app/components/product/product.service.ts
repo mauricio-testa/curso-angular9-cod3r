@@ -4,6 +4,9 @@ import { MatSnackBar } from '@angular/material/snack-bar'
 @Injectable({
   providedIn: 'root' // Pode ser injetado em toda a aplicação
 })
+
+// ESSA CLASSE É UM SINGLETON! Vai ter uma instancia só compartilhada em todo o projeto
+
 export class ProductService {
 
   constructor(private snackBar: MatSnackBar) { }
