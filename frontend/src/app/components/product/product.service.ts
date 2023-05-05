@@ -35,6 +35,10 @@ export class ProductService {
 		return this.http.put<Product>(`${this.baseUrl}/${product.id}`, product)
 	}
 
+	delete(id: string | null): Observable<Product> {
+		return this.http.delete<Product>(`${this.baseUrl}/${id}`)
+	}
+
 	showMessage(msg: string): void {
 		this.snackBar.open(msg, 'X', {
 			duration: 3000,

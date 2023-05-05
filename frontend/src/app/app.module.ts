@@ -27,6 +27,7 @@ import { RedDirective } from './directives/red.directive';
 import { ProductCreateComponent } from './components/product/create/create.component';
 import { ProductIndexComponent } from './components/product/index/index.component';
 import { ProductEditComponent } from './components/product/edit/edit.component'
+import { ProductDeleteComponent } from './components/product/delete/delete.component';
 
 import localePt from '@angular/common/locales/pt'
 import { registerLocaleData } from '@angular/common';
@@ -44,6 +45,7 @@ registerLocaleData(localePt)
     ProductCreateComponent,
     ProductIndexComponent,
     ProductEditComponent,
+    ProductDeleteComponent,
   ],
   imports: [ // como se fosse o components {} do vue
     BrowserModule,
