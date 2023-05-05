@@ -19,7 +19,7 @@ export class ProductService {
 		private http: HttpClient
 	) { }
 
-	read(): Observable<Array<Product>> {
+	index(): Observable<Array<Product>> {
 		return this.http.get<Array<Product>>(this.baseUrl);
 	}
 

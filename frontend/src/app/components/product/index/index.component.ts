@@ -3,11 +3,11 @@ import { ProductService } from '../product.service';
 import { Product } from '../product.model';
 
 @Component({
-  selector: 'app-product-read',
-  templateUrl: './read.component.html',
-  styleUrls: ['./read.component.css']
+  selector: 'app-product-index',
+  templateUrl: './index.component.html',
+  styleUrls: ['./index.component.css']
 })
-export class ReadComponent implements OnInit{
+export class ProductIndexComponent implements OnInit{
 
 	products: Array<Product> = []
 
@@ -16,7 +16,7 @@ export class ReadComponent implements OnInit{
 	constructor(private productService: ProductService) {}
 
 	ngOnInit(): void {
-		this.productService.read().subscribe(products => {
+		this.productService.index().subscribe(products => {
 			this.products = products
 			console.log(this.products)
 		})
