@@ -11,6 +11,10 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/template/header/header.component';
@@ -42,7 +46,10 @@ import { CreateComponent } from './components/product/create/create.component';
 	MatCardModule,
 	MatButtonModule,
 	MatSnackBarModule,
-	HttpClientModule
+	HttpClientModule,
+	FormsModule,
+	MatFormFieldModule,
+	MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent] // #2 O app.module.ts diz que o componente inicial é o AppComponent. Como se fosse o App.vue

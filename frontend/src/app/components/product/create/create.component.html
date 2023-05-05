@@ -1,9 +1,25 @@
-<p>create works!</p>
+<mat-card>
+	<mat-card-header>
+		<mat-card-title>Novo Produto</mat-card-title>
+	</mat-card-header>
+	<mat-card-content>
 
-<button mat-raised-button (click)="createProduct()" color="primary">
-	Salvar
-</button>
+		<form action="">
+			<mat-form-field>
+				<input matInput placeholder="Nome" type="text">
+			</mat-form-field>
+			<mat-form-field>
+				<input matInput placeholder="Preço (R$)" type="text">
+			</mat-form-field>
+		</form>
 
-<button mat-raised-button (click)="cancel()">
-	Cancelar
-</button>
+		<button mat-raised-button (click)="createProduct()" color="primary">
+			Salvar
+		</button>
+
+		<button mat-raised-button (click)="cancel()">
+			Cancelar
+		</button>
+
+	</mat-card-content>
+</mat-card>
