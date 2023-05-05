@@ -27,6 +27,14 @@ export class ProductService {
 		return this.http.post<Product>(this.baseUrl, product)
 	}
 
+	edit(id: number): Observable<Product> {
+		return this.http.get<Product>(`${this.baseUrl}/${id}`)
+	}
+
+	update(id: number, product: Product): Observable<Product> {
+		return this.http.put<Product>(`${this.baseUrl}/${id}`, product)
+	}
+
 	showMessage(msg: string): void {
 		this.snackBar.open(msg, 'X', {
 			duration: 3000,
