@@ -26,9 +26,10 @@ import { ProductComponent } from './views/product/product.component';
 import { RedDirective } from './directives/red.directive';
 import { ProductCreateComponent } from './components/product/create/create.component';
 import { ProductIndexComponent } from './components/product/index/index.component';
+import { ProductEditComponent } from './components/product/edit/edit.component'
 
 import localePt from '@angular/common/locales/pt'
-import { registerLocaleData } from '@angular/common'
+import { registerLocaleData } from '@angular/common';
 registerLocaleData(localePt)
 
 @NgModule({
@@ -42,6 +43,7 @@ registerLocaleData(localePt)
     RedDirective,
     ProductCreateComponent,
     ProductIndexComponent,
+    ProductEditComponent,
   ],
   imports: [ // como se fosse o components {} do vue
     BrowserModule,
