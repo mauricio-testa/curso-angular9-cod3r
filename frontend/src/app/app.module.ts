@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'
@@ -26,6 +26,10 @@ import { ProductComponent } from './views/product/product.component';
 import { RedDirective } from './directives/red.directive';
 import { CreateComponent } from './components/product/create/create.component';
 import { ReadComponent } from './components/product/read/read.component';
+
+import localePt from '@angular/common/locales/pt'
+import { registerLocaleData } from '@angular/common'
+registerLocaleData(localePt)
 
 @NgModule({
   declarations: [
@@ -55,7 +59,10 @@ import { ReadComponent } from './components/product/read/read.component';
 	MatInputModule,
 	MatTableModule
   ],
-  providers: [],
+  providers: [{
+	provide: LOCALE_ID,
+	useValue: 'pt-BR'
+  }],
   bootstrap: [AppComponent] // #2 O app.module.ts diz que o componente inicial é o AppComponent. Como se fosse o App.vue
 })
 export class AppModule { }
