@@ -208,6 +208,14 @@ import AuthModule from 'auth-module'
 
 https://www.youtube.com/watch?v=wDTPz032MRo&list=PLdPPE0hUkt0rPyAkdhHIIquKbwrGUkvw3&index=14
 
+## Schematics
+
+São modelos de componentes
+
+https://material.angular.io/guide/schematics
+
+## Estrutura de arquivos
+
 app
 	components
 		product

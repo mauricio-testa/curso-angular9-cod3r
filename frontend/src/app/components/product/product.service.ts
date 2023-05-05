@@ -19,6 +19,10 @@ export class ProductService {
 		private http: HttpClient
 	) { }
 
+	read(): Observable<Array<Product>> {
+		return this.http.get<Array<Product>>(this.baseUrl);
+	}
+
 	create(product: Product): Observable<Product> {
 		return this.http.post<Product>(this.baseUrl, product)
 	}

@@ -1,8 +1,9 @@
 <mat-card>
-	<mat-card-header>
+	<mat-card-header class="header">
 		<mat-card-title>Products</mat-card-title>
+		<button color="primary" mat-raised-button (click)="navigateToProductCreate()">Create</button>
 	</mat-card-header>
 	<mat-card-content>
-		<button mat-raised-button (click)="navigateToProductCreate()">Create</button>
+		<app-product-read></app-product-read>
 	</mat-card-content>
 </mat-card>

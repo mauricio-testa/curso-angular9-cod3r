@@ -14,6 +14,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
 
 
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { HomeComponent } from './views/home/home.component';
 import { ProductComponent } from './views/product/product.component';
 import { RedDirective } from './directives/red.directive';
 import { CreateComponent } from './components/product/create/create.component';
+import { ReadComponent } from './components/product/read/read.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { CreateComponent } from './components/product/create/create.component';
     HomeComponent,
     ProductComponent,
     RedDirective,
-    CreateComponent
+    CreateComponent,
+    ReadComponent,
   ],
   imports: [ // como se fosse o components {} do vue
     BrowserModule,
@@ -49,7 +52,8 @@ import { CreateComponent } from './components/product/create/create.component';
 	HttpClientModule,
 	FormsModule,
 	MatFormFieldModule,
-	MatInputModule
+	MatInputModule,
+	MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent] // #2 O app.module.ts diz que o componente inicial é o AppComponent. Como se fosse o App.vue
