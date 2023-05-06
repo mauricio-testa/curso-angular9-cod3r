@@ -27,7 +27,7 @@ export class ProductService {
 		return this.http.post<Product>(this.baseUrl, product)
 	}
 
-	get(id: string): Observable<Product> {
+	get(id: number): Observable<Product> {
 		return this.http.get<Product>(`${this.baseUrl}/${id}`)
 	}
 
@@ -35,7 +35,7 @@ export class ProductService {
 		return this.http.put<Product>(`${this.baseUrl}/${product.id}`, product)
 	}
 
-	delete(id: string | null): Observable<Product> {
+	delete(id: number): Observable<Product> {
 		return this.http.delete<Product>(`${this.baseUrl}/${id}`)
 	}
 

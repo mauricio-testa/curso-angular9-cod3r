@@ -14,14 +14,14 @@ export class ProductDeleteComponent {
 		price: 0
 	}
 
-	id: string
+	id: number
 
 	constructor(
 		private productService: ProductService, 
 		private router: Router, 
 		private route: ActivatedRoute
 	) {
-		this.id = this.route.snapshot.paramMap.get('id') || ''
+		this.id = Number(this.route.snapshot.paramMap.get('id'))
 	}
 
 	ngOnInit(): void {
