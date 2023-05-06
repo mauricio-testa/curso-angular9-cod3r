@@ -215,7 +215,7 @@ São modelos de componentes
 https://material.angular.io/guide/schematics
 
 ## Estrutura de arquivos
-
+```
 app
 	components
 		product
@@ -223,8 +223,11 @@ app
 			product.service.ts
 			create
 				create.component.(html|css|ts)
+			delete
+				delete.component.(html|css|ts)
 		template
 			header
 				header.component.(html|css|ts)
 			footer
 				footer.component.(html|css|ts)
+```
