@@ -3,5 +3,9 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .v-middle { vertical-align: middle; }
-
-
+.toast-success > div {
+	background-color: #018786 !important;
+}
+.toast-error > div {
+	background-color: #b00020 !important;
+}
